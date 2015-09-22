@@ -1,6 +1,7 @@
 // ==================================================================================================
 // WRITEN BY HUGO FABIANO A. FERREIRA - hugoofab@gmail.com
 // JUN 2015. São Paulo - SP, Brasil. 
+// https://github.com/hugoofab/myProgressbar/
 //
 // ESTE É UM PLUGIN PARA CRIAÇÃO DE UM PROGRESSBAR COMPATÍVEL COM TWITTER BOOTSTRAP
 // O DIFERENCIAL DESTE PLUGIN É PODER COLOCAR UM TEXTO NO MEIO DA PROGRESSBAR DE FORMA QUE
