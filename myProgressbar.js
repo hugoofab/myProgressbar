@@ -1,7 +1,7 @@
 // ==================================================================================================
 // WRITEN BY HUGO FABIANO A. FERREIRA - hugoofab@gmail.com
-// JUN 2015. São Paulo - SP, Brasil. 
-// https://github.com/hugoofab/myProgressbar/
+// JUN 2015. São Paulo - SP, Brasil. 	created
+// SET 2015. Goiânia - GO, Brasil.		bug fix
 //
 // ESTE É UM PLUGIN PARA CRIAÇÃO DE UM PROGRESSBAR COMPATÍVEL COM TWITTER BOOTSTRAP
 // O DIFERENCIAL DESTE PLUGIN É PODER COLOCAR UM TEXTO NO MEIO DA PROGRESSBAR DE FORMA QUE
@@ -77,7 +77,7 @@ $.fn.myProgressbar = function ( conf ){
 	var totalWidth  = this.width();
 	var totalHeight = conf.height ;
 
-    this.addClass ( conf.initialClass );
+    this.addClass ( "progress" );
     this.css('overflow','hidden')
     this.css('height',totalHeight+"px")
 
@@ -86,10 +86,11 @@ $.fn.myProgressbar = function ( conf ){
     $(internalDiv).attr('aria-valuemin', 0 );
     $(internalDiv).attr('aria-valuemax', 100 );
     $(internalDiv).attr('role'         , 'progressbar' );
-    $(internalDiv).attr('class'        , 'progress-bar' );
+    $(internalDiv).attr('class'        , conf.initialClass );
 
     $(internalDiv).css('overflow'     , 'hidden' );
     $(internalDiv).css('position'     , 'relative' );
+    $(internalDiv).css('margin-top'     , '-1px' );
     $(internalDiv).css('z-index'      , (conf.zIndex+1) );
     $(internalDiv).css('padding'      , '0' );
     $(internalDiv).css('margin'       , '0' );
